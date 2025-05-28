@@ -1,7 +1,5 @@
-<h1>Ask your coach a question:</h1>
-
-<%= form_tag("/answer") do %>
- <%= label_tag(:question,  "your question")%>
- <%= text_field_tag(:question) %>
- <%= submit_tag("Ask") %>
- <% end %>
+<h1>Ask your coach anything</h1>
+<form action="/answer" method="get" data-turbo="false">
+  <input type="text" name="question" class="form-control">
+  <input type="submit" value="Ask!" class="btn btn-primary">
+</form>
