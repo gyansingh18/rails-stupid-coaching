@@ -1,0 +1,7 @@
+<h1>Ask your coach a question:</h1>
+
+<%= form_tag("/answer") do %>
+ <%= label_tag(:question,  "your question")%>
+ <%= text_field_tag(:question) %>
+ <%= submit_tag("Ask") %>
+ <% end %>
